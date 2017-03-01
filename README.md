@@ -9,7 +9,7 @@ or checkout [Stelligent's Website](https://stelligent.com).
 
 The Dromedary demo app is a simple Nodejs application that displays a pie chart to users. The data that
 describes the pie chart (i.e. the colors and their values) is served by the application.
-
+more info..
 If a user clicks on a particular color segment in the chart, the frontend will send a request to the
 backend to increment the value for that color and update the chart with the new value.
 
