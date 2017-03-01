@@ -1,8 +1,12 @@
 language: node_js
 node_js:
-  - "7.2"
+- '7.2'
 beforescript:
-  - npm install -g gulp
-  - npm install
-script:
-  gulp package-app
+- npm install -g gulp
+- npm install
+script: gulp package-app
+deploy:
+  provider: heroku
+  app: botcha-app1
+  api_key:
+    secure: c9oJN7tORgPSmLdi0WHRyL5Po3AfN6KvyxERLokqRcj6mUeTq7W5cLOd3eRUMbVkP7iUjRIiLOvUTrW6/4FMT9/eIAoAk4wm3Kh3YYBP1Uufnkf/g0MA4WBlV4DAaOQgDN+gfloW9QTwHmIK51gRjWFgCUt2qY/p0sx/H/cXUoP9N/0Wxqxbw8uBEOtTXrbrxHlJoMCaYxsShbNsroUcjjqYo/z6/XUXzQ0YxgBArZ26djENPRhkH+MnA7NS6KxYOuxMRQCEzvTJfL5KrtnViH2sCXh3TpAp0VofejjkWSf8yhwqMnDCathRcMBsaN9B2WarftzdOPwiFIGTH6lRv0KZD5iJ/5/3V52seiIsq1ufu4hQogZ8Z1+ew1a/pmicVTONsCkLHCf0vKNME6oV7NKhynWQ7Kc31JaVpCAZzyxLI6BT6JxfsC0myMfUiHpDp7PJoGCAQVUQ7PRLSP5zk8mc6hzoFfVDrOCNObQm0fa09bbjz8HM0gINbNAUSty7DG1q9C3wiaDVgQN0Ukm62yJvX6VoqDIDCd/ldTk4WbyyDdFrO5VcVuhw4rzi8oK8uerDp6zIJW6zsOgkn1q7VNX4XKUqLEuQiPRwu90uyqFkQ9te2RwexZwzEZ7QwjEpm616Z7UE9ziHgrOUJYD2jHcob1E2cwW94qG+VfhHnQY=
